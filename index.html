@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script type="module" src="./index.js"></script>
+    <form method="get" action="login.html">
+        <label for="username">User name</label>
+        <input type="text" name="username" id="username" autocomplete="username webauthn">
+        <input type="submit" value="Log in">
+    </form>
+    <form method="post" action="login.html" enctype="multipart/form-data">
+        <public-key-credential challenge="AAAA" name="credential" conditional />
+    </form>
+</body>
+
+</html>
